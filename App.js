@@ -60,7 +60,10 @@ export default class App extends Component {
           style={styles.button}
           onPress={() =>
             Alert.alert(
+              `Datos Ingresados`,
               `Usuario: ${this.state.user} \nContraseña: ${this.state.password}`,
+              this.changeUserInput(''),
+              this.changePasswordInput(''),
             )
           }>
           <Text style={styles.button_text}>INGRESAR</Text>
